@@ -1,0 +1,174 @@
+// * {
+//     margin: 0;
+//     padding: 0;
+//     box-sizing: border-box;
+// }
+// .container {
+//     width: 100vw;
+//     height: 100vh;
+//     overflow: hidden;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     background-color: #4a4949;
+//     .images{
+//         display: flex;
+//         align-items: center;
+//         justify-content: center;
+//         gap: 20px;
+
+//         .block {
+//             width: 150px;
+//             height: 700px;
+//             border-radius: 125px;
+//             transition: all 0.10s ease;
+//             transition: flex-basis 0.10s ease, transform 0.8s ease;
+//             cursor: pointer;
+//             flex-shrink: 0;
+//         }
+//         .meadows {
+//             background-image: url(../images/1blockjpg.jpg);
+//             background-repeat: no-repeat;
+//             background-position: center;
+//             background-size: cover;
+//             display: flex;
+//             align-items: center;
+//             justify-content: center;
+//         }
+//         .river {
+//             background-image: url(../images/2block.jpg);
+//             background-repeat: no-repeat;
+//             background-position: center;
+//             background-size: cover;
+//             display: flex;
+//             align-items: center;
+//             justify-content: center;
+//         }
+//         .snow {
+//             background-image: url(../images/3block.jpg);
+//             background-repeat: no-repeat;
+//             background-position: center;
+//             background-size: cover;
+//             display: flex;
+//             align-items: center;
+//             justify-content: center;
+//         }
+//         .mountains {
+//             background-image: url(../images/4block.jpg);
+//             background-repeat: no-repeat;
+//             background-position: center;
+//             background-size: cover;
+//             display: flex;
+//             align-items: center;
+//             justify-content: center;
+//         }
+//         .desert {
+//             background-image: url(../images/6block.jpeg);
+//             background-repeat: no-repeat;
+//             background-position: center;
+//             background-size: cover;
+//             display: flex;
+//             align-items: center;
+//             justify-content: center;
+//         }
+
+//     }
+// }
+// .block.active {
+//     flex-basis: 900px;
+//     transform: scale(1.03);
+// }
+
+// .icon {
+//     position: absolute;
+//     bottom: 12px;
+//     left: 50%;
+//     // transform: translateX(-50%);
+//     background: #fff;
+//     width: 36px;
+//     height: 36px;
+//     border-radius: 50%;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     font-size: 18px;
+// }
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background: #4a4949;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .images {
+        display: flex;
+        gap: 20px;
+        height: 720px;
+
+        .block {
+            position: relative;
+            width: 140px;
+            border-radius: 120px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: all .4s ease;
+            flex-shrink: 0;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+            &.active {
+                width: 900px;
+            }
+        }
+
+        .meadows {
+            background-image: url(../images/1blockjpg.jpg);
+        }
+
+        .river {
+            background-image: url(../images/2block.jpg);
+        }
+
+        .snow {
+            background-image: url(../images/3block.jpg);
+        }
+
+        .mountains {
+            background-image: url(../images/4block.jpg);
+        }
+
+        .desert {
+            background-image: url(../images/6block.jpeg);
+        }
+    }
+}
+
+.icon {
+    position: absolute;
+    bottom: 14px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 68px;
+    height: 68px;
+    background: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: red;
+}
+
+.block {
+    position: relative;
+}
