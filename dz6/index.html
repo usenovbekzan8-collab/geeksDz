@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="bmi">
+            <h1>Расчёт индекса массы тела</h1>
+        
+            <div class="field">
+                <label>Рост (см):</label>
+                <input type="number" id="height" placeholder="Введите свой рост в см">
+            </div>
+        
+            <div class="field">
+                <label>Вес (кг):</label>
+                <input type="number" id="weight" placeholder="Введите свой вес в кг">
+            </div>
+        
+            <div class="result">
+                <p>Ваш результат: <span id="bmiValue">—</span></p>
+                <p>Вывод: <span id="bmiText">—</span></p>
+            </div>
+        </div>
+        
+        <script src="app.js"></script>
+    </div>
+</body>
+</html>
