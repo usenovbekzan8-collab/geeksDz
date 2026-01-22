@@ -1,0 +1,93 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1d2671, #c33764);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app {
+  background: #fff;
+  padding: 30px 25px;
+  border-radius: 15px;
+  width: 320px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.app h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+button {
+  display: none;
+}
+
+#phone {
+  width: 100%;
+  padding: 12px 15px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+#phone:focus {
+  border-color: #6a5acd;
+  box-shadow: 0 0 0 2px rgba(106, 90, 205, 0.2);
+}
+
+#checkBtn {
+  margin-top: 15px;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: #6a5acd;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#checkBtn:hover {
+  background: #5848c2;
+}
+
+#result {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/* Цвета под операторов */
+.mega {
+  color: #008000;
+  background: rgba(0, 128, 0, 0.1);
+}
+
+.o {
+  color: #ff7a00;
+  background: rgba(255, 122, 0, 0.1);
+}
+
+.beeline {
+  color: #f5c400;
+  background: rgba(245, 196, 0, 0.2);
+}
+
+.not-found {
+  color: #d32f2f;
+  background: rgba(211, 47, 47, 0.1);
+}/*# sourceMappingURL=style.css.map */
